@@ -12,7 +12,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
 \u23F0 Duration: ${e.duration} Month(s)
 \u{1F4B0} Total Price: ${e.price}
 
-\u{1F4B5} Please pay at the Gym.`),console.log("Saved to backend (Pay at Gym):",e),this.resetForm();else if(e.paymentMethod==="online"){let n={key:"rzp_test_1DP5mmOlF5G5ag",amount:this.selectedDuration*this.getPricePerMonth(this.selectedPlan)*100,currency:"INR",name:"GYMFIT",description:`${e.plan} Plan - ${e.duration} Month(s)`,image:"https://yourgymwebsite.com/logo.png",handler:o=>{alert(`\u{1F389} Payment Successful!
+\u{1F4B5} Please pay at the Gym.`),console.log("Saved to backend (Pay at Gym):",e),this.resetForm();else if(e.paymentMethod==="online"){let n={key:"rzp_test_1DP5mmOlF5G5ag",amount:this.selectedDuration*this.getPricePerMonth(this.selectedPlan)*100,currency:"INR",name:"GYMFIT",description:`${e.plan} Plan - ${e.duration} Month(s)`,image:"assets/images/gymfit-logo.png",handler:o=>{alert(`\u{1F389} Payment Successful!
 
 Payment ID: ${o.razorpay_payment_id}
  \u2705Plan: ${e.plan}
